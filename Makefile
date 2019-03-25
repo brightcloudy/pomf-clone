@@ -16,11 +16,13 @@ swig:
 	$(NODE) node_modules/swig/bin/swig.js render -j dist.json templates/faq.swig > $(CURDIR)/build/faq.html 
 	$(NODE) node_modules/swig/bin/swig.js render -j dist.json templates/index.swig > $(CURDIR)/build/index.html 
 	$(NODE) node_modules/swig/bin/swig.js render -j dist.json templates/tools.swig > $(CURDIR)/build/tools.html 
+	$(NODE) node_modules/swig/bin/swig.js render -j dist.json templates/sources.swig > $(CURDIR)/build/sources.html 
 
 htmlmin:
 	$(NODE) node_modules/htmlmin/bin/htmlmin $(CURDIR)/build/index.html -o $(CURDIR)/build/index.html 
 	$(NODE) node_modules/htmlmin/bin/htmlmin $(CURDIR)/build/faq.html -o $(CURDIR)/build/faq.html 
 	$(NODE) node_modules/htmlmin/bin/htmlmin $(CURDIR)/build/tools.html -o $(CURDIR)/build/tools.html 
+	$(NODE) node_modules/htmlmin/bin/htmlmin $(CURDIR)/build/sources.html -o $(CURDIR)/build/sources.html 
 
 installdirs:
 	mkdir -p $(DESTDIR)/ $(DESTDIR)/img

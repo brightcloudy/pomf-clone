@@ -10,7 +10,8 @@
 	"src": [
 		"templates/index.swig",
 		"templates/faq.swig",
-		"templates/tools.swig"
+		"templates/tools.swig",
+		"templates/sources.swig"
 	],
 	"generateRobotstxt": false,
 	"generateSitemap": false,
