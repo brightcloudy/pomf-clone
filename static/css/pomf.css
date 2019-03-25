@@ -38,6 +38,7 @@ body {
   background-color: #F7F7F7;
   background-image: url('grill.php'), url('img/bg.png');
   background-position: 85% 100%, top left;
+  background-size: 30%, auto;
   background-repeat: no-repeat, repeat;
   color: #333;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

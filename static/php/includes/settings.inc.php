@@ -37,23 +37,24 @@
  * PDO_MYSQL DSN.
  * @param string POMF_DB_CONN DSN:host|unix_socket=hostname|path;dbname=database
  */
-define('POMF_DB_CONN', 'mysql:unix_socket=/var/run/mysqld/mysqld.sock;dbname=pomf');
+//define('POMF_DB_CONN', 'mysql:unix_socket=/var/run/mysqld/mysqld.sock;dbname=pomf');
+define('POMF_DB_CONN', 'sqlite:/var/db/pomf/pomf.sq3');
 
 /**
  * PDO database login credentials
  */
 
 /** @param string POMF_DB_NAME Database username */
-define('POMF_DB_USER', 'pomf');
+define('POMF_DB_USER', null);
 /** @param string POMF_DB_PASS Database password */
-define('POMF_DB_PASS', '');
+define('POMF_DB_PASS', null);
 
 /**
  * File system location where to store uploaded files
  *
  * @param string Path to directory with trailing delimiter
  */
-define('POMF_FILES_ROOT', '/mnt/pantsu/http/files/');
+define('POMF_FILES_ROOT', '/mnt/files/');
 
 /**
  * Maximum number of iterations while generating a new filename
@@ -79,7 +80,7 @@ define('POMF_FILES_LENGTH', 6);
  *
  * @param string POMF_URL URI with trailing delimiter
  */
-define('POMF_URL', 'https://i.pantsu.cat/');
+define('POMF_URL', 'https://i.gaypega.club/');
 
 /**
  * URI for filename generation

@@ -5,7 +5,6 @@
         "dest": "dist",
         "pkgVersion": "<%= pkg.version %>",
 	"banners": [
-		"banners/malware_scans.swig",
 		"banners/donations.swig"
 	],
 	"src": [
@@ -15,12 +14,12 @@
 	],
 	"generateRobotstxt": false,
 	"generateSitemap": false,
-	"max_upload_size": 128,
+	"max_upload_size": 64,
 	"production": false,
-	"siteName": "Pomf",
-	"siteUrl": "http://example.com",
-	"abuseContact": "abuse@example.com",
-	"infoContact": "info@example.com",
+	"siteName": "Gay Pega Club",
+	"siteUrl": "https://gaypega.club/",
+	"abuseContact": "brighty@brightcloud.tech",
+	"infoContact": "brighty@brightcloud.tech",
 	"paypalUrl": "",
 	"bitcoinAddress": "",
 	"flattrUrl": ""
